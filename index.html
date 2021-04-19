@@ -21,20 +21,23 @@
                 <a href="#">Sign In</a>
             </div>
         </header>
-        <div>
+
+        <div id="logo">
             <img src="./images/googlelogo_color_272x92dp.png" alt="">
         </div>
-        <div id="search-bar">
-            <form action="">
-                <input type="text">
-                <div class="search-icons">
-                    <img src="./images/search_black_24dp.svg" alt="">
-                    <img src="./images/mic_black_24dp.svg" alt="">
-                </div>
-                <button>Google Search</button>
-                <button>I'm feeling Lucky</button>
-            </form>
-        </div>
+        
+        <form action="submit">
+            <div id="search-bar">
+                <img src="./images/search_black_24dp.svg" alt="" class="center" id="magnifying-glass">
+                <input type="text" placeholder="Search Google or type a URL" class="center">
+                <img src="./images/mic_black_24dp.svg" alt="" class="center" id="microphone">
+            </div>
+            <div>
+                <button class="buttons">Google Search</button>
+                <button class="buttons">I'm feeling Lucky</button>
+            </div>
+        </form>
+
         <footer>
             <div id="footer-left">
                 <a href="#" class="footer-link">Advertising</a>

@@ -5,8 +5,25 @@
      color: #222
  }
  
+ input {
+     width: 90%;
+    border: none;
+    margin: 10px 0px;
+ }
+
  a {
      text-decoration: solid;
+ }
+
+ #microphone {
+    width: auto;
+    height: 26px;
+    align-self: center;
+    padding: 0 10px;
+ }
+ 
+ #magnifying-glass{
+     padding: 10px;
  }
 
  #logo img{ 
@@ -17,15 +34,18 @@
  form{
     width: 50%; 
     margin: 0 auto;
-    background-color: red;
+    /* background-color: red; */
     text-align:center;
  }
 
  #search-bar{
     display: flex;
-    width: max-content;
+    width: 100%;
     margin: 0 auto 10px auto;
-    background-color: cyan;
+    justify-content: space-between;
+    /* background-color: cyan; */
+    border: 1px solid lightgray;
+    border-radius: 50px 50px 50px 50px;
  }
 
  .buttons {
@@ -40,26 +60,58 @@
  footer {
     position: fixed;
     width: 100%;
-    bottom: 0px;
     height: auto;
-    padding: 5px;
+    bottom: 0px;
     background-color:rgb(242,242,242);
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: space-evenly;
  }
 
  .footer-link {
      color: rgb(112,117,122);
-     padding: 0px 10px;
+     padding: 10px 10px;
+     margin: 10px 0px;
  }
+
+ #footer-left {
+    display: flex;
+    order: 1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+ }
+
+ #footer-right {
+    display: flex;
+    order: 3;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+ }
+
+ #footer-center {
+    display: flex;
+    order: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    /* background-color: purple; */
+ }
+
 
  .leaf {
      height: 16px;
  }
 
- 
-
- 
+ /*
+@media (max-width: 770px){
+    #footer {
+        max-width: max-content;
+    }
+    
+    #footer-center {
+        order: 0;
+        vertical-align: top;
+        flex-wrap: wrap;
+    }
+}
+ */

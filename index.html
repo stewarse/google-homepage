@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Google</title>
 </head>
 
 <body>
     <header>
-        <div class="about-store">
-            <a href="#">About</a>
-            <a href="#">Store</a>
+        <div id="nav-left">
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Store</a>
         </div>
-        <div class="gmail-signin">
-            <a href="#">Gmail</a>
-            <a href="#">Images</a>
-            <a href="#"><img src="./images/apps_black_24dp.svg" alt=""></a>
-            <a href="#">Sign In</a>
+        <div id="nav-right">
+            <a href="#" class="nav-link">Gmail</a>
+            <a href="#" class="nav-link">Images</a>
+            <a href="#"><span class="material-icons nav-link app-icon">apps</span></a>
+            <a href="#" class="nav-link" id="sign-in">Sign In</a>
         </div>
     </header>
 
@@ -28,7 +30,7 @@
         </div>
         <form action="submit">
             <div id="search-bar">
-                <img src="./images/search_black_24dp.svg" alt="" class="center" id="magnifying-glass">
+                <span class="material-icons" id="magnifying-glass">search</span>
                 <input type="text" placeholder="Search Google or type a URL" class="center">
                 <img src="https://i.imgur.com/l5S4LZ2.png" alt="" class="center" id="microphone">
             </div>
